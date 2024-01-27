@@ -69,22 +69,6 @@ main {
    width: 70%;
 }
 
-@media (max-width: 768px) {
-    .flex-container {
-        flex-direction: column;
-    }
-
-    .intro-text, .intro-image {
-        flex: none;
-        text-align: center;
-    }
-
-    .intro-image img {
-        max-width: 90%;
-        width: 100%;
-    }
-}
-
 .welcome-statement {
     color: #3BBADB;
     font-weight: 100;
@@ -113,7 +97,6 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     font-size: 2rem;
-    
 }
 
 .hire-me {
@@ -127,4 +110,56 @@ h2 {
     color: #008AAA;
     border: #008AAA 1px solid;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1.5rem;
+    }
+
+    main {
+        margin-top: 40px;
+    }
+
+    nav ul li {
+        display: block;
+        
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        justify-content: end;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        
+    }
+
+    .intro-image {
+        order: -1;
+    }
+
+    .intro-text, .intro-image {
+        flex: none;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .intro-image img {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    .welcome-statement {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
 }
