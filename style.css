@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 3rem;
+    padding: 5rem;
 }
 
 header {
@@ -20,7 +20,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 5rem;
 }
 
 nav ul li a i  {
@@ -32,16 +32,53 @@ nav ul li a {
     color: #000; 
     display: flex; 
     align-items: center; 
+    font-size: 1.5rem;
 }
 
 .home-button {
     color: #D1884F;
 }
 
-#intro {
-    text-align: center;
-    padding: 50px;
+main {
+    margin-top: 100px;
 }
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro-text, .intro-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro-text {
+    padding: 20px;
+}
+
+.intro-image {
+    text-align: right; 
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .intro-text, .intro-image {
+        flex: none;
+        /* max-width: 100%; */
+        text-align: center;
+    }
+
+    .intro-image img {
+        max-width: 90%;
+    }
+}
+
+
 
 .btn {
     display: inline-block;
