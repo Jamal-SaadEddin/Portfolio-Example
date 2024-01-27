@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 5rem;
+    padding: 4rem;
 }
 
 header {
@@ -40,7 +42,7 @@ nav ul li a {
 }
 
 main {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .flex-container {
@@ -56,10 +58,15 @@ main {
 
 .intro-text {
     padding: 20px;
+    font-size: 1.5rem;
 }
 
 .intro-image {
     text-align: right; 
+}
+
+.intro-image img {
+   width: 70%;
 }
 
 @media (max-width: 768px) {
@@ -69,27 +76,55 @@ main {
 
     .intro-text, .intro-image {
         flex: none;
-        /* max-width: 100%; */
         text-align: center;
     }
 
     .intro-image img {
         max-width: 90%;
+        width: 100%;
     }
 }
 
+.welcome-statement {
+    color: #3BBADB;
+    font-weight: 100;
+    margin-bottom: 3rem;
+    font-size: xx-large;
+}
 
+h2 {
+    color: #018DB0;
+    font-size: 4.25rem;
+}
+
+.designer {
+    color: #D1884F;
+}
+
+.see-more {
+    color: #008AAA;
+    text-decoration: none;
+}
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
-    background: #007bff;
-    color: white;
+    margin: 50px 20px 0 0;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 2rem;
+    
 }
 
-.btn:hover {
-    background: #0056b3;
+.hire-me {
+    background: #008AAA;
+    color: #fff;
+    box-shadow: 0 5px 1px rgba(59, 186, 219, 0.5);
+}
+
+.see-my-project {
+    background: #fff;
+    color: #008AAA;
+    border: #008AAA 1px solid;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
